@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+    <div class="columns is-centered">
+        <div class="column is-three-quarters">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <a href="#" class="navbar-item">
+                        <img src="ressources/pav.png" alt="logo">
+                    </a>
+
+                    <div class="navbar-burger burger" id="burgerButton" data-target="menuContent">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-menu" id="menuContent">
+                    <div class="navbar-end">
+                        <a href="" class="navbar-item">Menu</a>
+
+                        <a href="" class="navbar-item">Recherche</a>
+
+                        <a href="" class="navbar-item">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- titre et recherche -->
+    <div class="container">
+        <div class="columns is-centered is-multiline">
+            <div class="column is-three-quarters">
+                <h2 class="title is-3 has-text-centered">
+                    Appartements disponibles à Paris
+                </h2>
+            </div>
+        </div>
+
+        <!-- input et button -->
+
+        <div class="column is-12 is-centered">
+            <div class="columns is-mobile is-centered">
+                <div class="column is-narrow is-7-mobile">
+                    <div class="field">
+                        <div class="control has-icons-left has-icons-right">
+                            <input type="text" placeholder="search" class="input is-success">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-search"></i>
+                            </span>
+                            <span class="icon is-small is-right"><i class="fas fa-check"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-narrow">
+                    <div class="button has-background-danger has-text-light">
+                        Recherche
+                    </div>
+                </div>
+            </div>
+            <!-- Petit text -->
+            <div class="column is-12 has-text-centered">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Perspiciatis, veniam!</div>
+        </div>
+
+        <!-- mosaique resultats de recherche avec photo -->
+        <br><br>
+        <div class="columns is-multiline is-centered is-mobile">
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <img src="ressources/aptParis.jpg" alt="mage appartement">
+                <p class="is-size-3">Lorem, ipsum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <img src="ressources/aptParis.jpg" alt="mage appartement">
+                <p class="is-size-3">Lorem, ipsum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <img src="ressources/aptParis.jpg" alt="mage appartement">
+                <p class="is-size-3">Lorem, ipsum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <img src="ressources/aptParis.jpg" alt="mage appartement">
+                <p class="is-size-3">Lorem, ipsum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <img src="ressources/aptParis.jpg" alt="mage appartement">
+                <p class="is-size-3">Lorem, ipsum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <img src="ressources/aptParis.jpg" alt="mage appartement">
+                <p class="is-size-3">Lorem, ipsum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <img src="ressources/aptParis.jpg" alt="mage appartement">
+                <p class="is-size-3">Lorem, ipsum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <img src="ressources/aptParis.jpg" alt="mage appartement">
+                <p class="is-size-3">Lorem, ipsum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <img src="ressources/aptParis.jpg" alt="mage appartement">
+                <p class="is-size-3">Lorem, ipsum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            All right reserved &COPY
+        </div>
+    </footer>
+    <script>
+        var burgerButton = document.getElementById('burgerButton');
+        var content = document.getElementById('menuContent');
+        burgerButton.addEventListener('click', function () {
+            content.classList.toggle('is-active');
+        })
+    </script>
+</body>
+
+</html>
